@@ -59,7 +59,7 @@ export const determineImageOverlaySize = (imgUrl, imgContainer) => {
           h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
     getImageSize(imgUrl, (width, height) => {
-        URL.revokeObjectURL(imgUrl); // test
+        URL.revokeObjectURL(imgUrl);
 
         if (width > w || height > h) {
             imgContainer.style.backgroundSize = 'contain';
